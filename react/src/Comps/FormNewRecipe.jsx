@@ -71,42 +71,25 @@ export default function FormNewRecipe(props) {
     return (
         <>
         <div className="card">
-            <h1 style={{ textAlign: "center" }}>New Recipe</h1>
-            <form className="form-New-ingriden_Recipe">
-            <div className="form__controls">
-                <div className="form__control">
+            <h1>New Recipe</h1>
+            <form>
+            <div>
+                <div >
                 <label>Name</label>
-                <input
-                    type="text"
-                    value={enteredRecipeName}
-                    onChange={recipeNameHandler}
+                <input type="text" value={enteredRecipeName} onChange={recipeNameHandler}
                 ></input>
                 </div>
-                <div className="form__control">
+                <div>
                 <label>Cooking Method</label>
-                <input
-                    type="text"
-                    value={enteredCookingMethod}
-                    onChange={cookingMethodHandler}
-                />
+                <input type="text" value={enteredCookingMethod} onChange={cookingMethodHandler}/>
                 </div>
-                <div className="form__control">
+                <div>
                 <label>Time</label>
-                <input
-                    type="number"
-                    min="0.01"
-                    step="0.01"
-                    value={enteredCookingTime}
-                    onChange={cookingTimeHandler}
-                />
+                <input type="number" min="0.01" step="0.01" value={enteredCookingTime} onChange={cookingTimeHandler}/>
                 </div>
-                <div className="form__control">
+                <div>
                 <label>Image</label>
-                <input
-                    type="text"
-                    value={enteredImageUrl}
-                    onChange={enteredURLHandler}
-                />
+                <input type="text" value={enteredImageUrl} onChange={enteredURLHandler}/>
                 </div>
             </div>
             </form>

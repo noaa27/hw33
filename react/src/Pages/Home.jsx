@@ -81,11 +81,11 @@ export default function Home(props) {
   return (
     <>
       <div className="card">
-        <h1 style={{ textAlign: "center" }}>Recipes</h1>
+        <h1>Recipes</h1>
         <div>{recStr}</div>
       </div>
       <div className="card">
-        <h1 style={{ textAlign: "center" }}>Ingredients</h1>
+        <h1>Ingredients</h1>
         <div>{ingStr}</div>
       </div>
     </>

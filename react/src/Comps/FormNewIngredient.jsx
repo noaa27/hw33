@@ -42,40 +42,27 @@ export default function FormNewIngredient() {
     return (
         <>
         <div className="card">
-            <h1 style={{ textAlign: "center" }}>New Ingredient</h1>
-            <form className="form-New-ingriden_Recipe">
-            <div className="form__controls">
-                <div className="form__control">
+            <h1>New Ingredient</h1>
+            <form>
+            <div>
+                <div>
                 <label>Name</label>
-                <input
-                    type="text"
-                    value={enteredName}
-                    onChange={inputNameHandler}
+                <input type="text" value={enteredName}  onChange={inputNameHandler}
                 ></input>
                 </div>
-                <div className="form__control">
+                <div>
                 <label>Calories</label>
-                <input
-                    type="number"
-                    min="0.01"
-                    step="0.01"
-                    value={enteredCalories}
-                    onChange={caloriesHandler}
-                />
+                <input type="number" value={enteredCalories}  onChange={caloriesHandler}/>
                 </div>
-                <div className="form__control">
+                <div>
                 <label>Image</label>
-                <input
-                    type="text"
-                    value={enteredImageUrl}
-                    onChange={enteredURLHandler}
-                />
+                <input  type="text" value={enteredImageUrl} onChange={enteredURLHandler}/>
                 </div>
             </div>
             </form>
         </div>
-        <div className="form-Button-Card">
-            <div className="form button">
+        <div>
+            <div>
             <button onClick={submitHandler}>Add Ingredient</button>
             <button onClick={resetTextHandler}>Cancel</button>
             </div>
